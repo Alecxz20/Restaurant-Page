@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #2e2e3e;
+}
+
+main {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav li {
+  border-bottom: 2px transparent solid;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  border-bottom: 2px #fa755a solid;
+}
+
+/* Home styles */
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hero-title {
+  font-size: 2.369rem;
+  margin-top: 30px;
+}
+
+.hero-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.2rem;
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+
+.hero-btn {
+  margin-top: 360px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #fa755a;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.active {
+  border-bottom: 2px #fa755a solid;
+}
+
+/* Menu styles */
+#Content {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.menu__title {
+  color: #fa755a;
+  margin-top: 1.333rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: #fa755a;
+}
+
+.pizzaImg {
+  width: 96px;
+  height: 96px;
+}
+
+.item {
+  position: relative;
+  padding: 1rem 1rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.item__price {
+  font-size: 1.333rem;
+  font-weight: bold;
+}
+
+.container {
+  margin-bottom: 3rem;
+}
+
+/* contact page */
+
+.contact {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mapContainer {
+  flex: 2;
+  text-align: center;
+}
+
+.schedule {
+  flex: 1;
+}
+
+.contactTitle {
+  color: #fa755a;
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
+.days {
+  list-style-type: none;
+}
+
+.days li {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.days li span {
+  font-weight: bold;
+}
+
+.map {
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .image {
+    position: inherit;
+    flex: 1;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1040px;
+    margin-top: 100px;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .hero-btn {
+    margin-top: 30px;
+  }
+
+  .hero-title {
+    font-size: 4.209rem;
+    margin-top: 0;
+  }
+
+  a:link {
+    font-size: 1.333rem;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto 3rem;
+  }
+
+  .pizzas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+}
